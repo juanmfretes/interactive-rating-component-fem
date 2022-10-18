@@ -26,9 +26,9 @@
     </style>
   </head>
   <body>
-    <!-- Rating state start -->
     <main>
-      <div class="rating-card">
+      <!-- Rating state start -->
+      <section class="rating-card">
         <div class="rating-card__icon">
           <img src="./images/icon-star.svg" alt="Star Icon" />
         </div>
@@ -50,18 +50,30 @@
         </div>
 
         <a href="#" class="rating-card__submit">Submit</a>
-      </div>
+      </section>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <section class="thanks-card">
+        <div class="thanks-card__image">
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="Ilustration thank you"
+          />
+        </div>
+
+        <!-- Add rating here -->
+        <div class="thanks-card__rating">
+          You selected <span class="thanks-card__mark">#</span> out of 5
+        </div>
+
+        <h2 class="thanks-card__title">Thank you!</h2>
+        <p class="thanks-card__text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
     </main>
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
     <!-- Thank you state end -->
 
     <div class="attribution">
