@@ -19,12 +19,6 @@
 
 /* rating-card__icon-box */
 .rating-card__icon-box {
-  width: 3.125rem;
-  height: 3.125rem;
-  border-radius: 50%;
-  background-color: steelblue;
-
-  position: relative;
 }
 
 /* rating-card__icon-image */
@@ -32,11 +26,6 @@
   width: 1.25rem;
   height: 1.176rem;
   max-width: 40%;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 /* rating-card__title */
