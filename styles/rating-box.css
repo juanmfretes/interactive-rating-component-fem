@@ -1,0 +1,15 @@
+/* rating-box */
+.rating-box {
+}
+
+/* rating-box__container */
+.rating-box__container {
+  display: flex;
+  gap: 1.25rem;
+}
+
+/* rating-box__rate */
+.rating-box__rate {
+  border: none;
+  background: none;
+}
