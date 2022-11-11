@@ -12,8 +12,8 @@
   background-color: indigo;
   max-width: 25.875rem;
   height: 26rem;
-  margin-top: 17px;
-  padding: 2rem 2.1rem;
+  margin-top: 1.0625rem;
+  padding: 2rem 2.0625rem;
   border-radius: 1.8rem;
 }
 
@@ -51,7 +51,7 @@
   font-size: 0.9375rem;
   color: var(--white);
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   background-color: var(--orange);
   border-radius: 20rem;
   padding: 0.95rem 0 0.73rem;
