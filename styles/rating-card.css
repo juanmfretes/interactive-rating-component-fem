@@ -13,12 +13,13 @@
   max-width: 25.875rem;
   height: 26rem;
   margin-top: 17px;
-  padding: 2rem;
+  padding: 2rem 2.1rem;
   border-radius: 1.8rem;
 }
 
 /* rating-card__icon-box */
 .rating-card__icon-box {
+  margin-bottom: 1.92rem;
 }
 
 /* rating-card__icon-image */
@@ -30,10 +31,16 @@
 
 /* rating-card__title */
 .rating-card__title {
+  font-size: 1.75rem;
+  padding-bottom: 0.67rem;
 }
 
 /* rating-card__text */
 .rating-card__text {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+
+  margin-bottom: 1.6rem;
 }
 
 /* rating-card__submit */
