@@ -1,11 +1,12 @@
 /* rating-box */
 .rating-box {
+  margin-bottom: 2rem;
 }
 
 /* rating-box__container */
 .rating-box__container {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.4rem;
 }
 
 /* rating-box__rate */
