@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./styles/helper.css" />
     <link rel="stylesheet" href="./styles/rating-card.css" />
     <link rel="stylesheet" href="./styles/rating-box.css" />
+    <link rel="stylesheet" href="./styles/thanks-card.css" />
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -33,7 +34,7 @@
   <body>
     <main>
       <!-- Rating state start -->
-      <section class="rating-card">
+      <section class="rating-card hidden">
         <div class="rating-card__container">
           <div class="rating-card__icon-box icon-round-background">
             <img
@@ -75,24 +76,25 @@
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <section class="thanks-card hidden">
-        <div class="thanks-card__image">
-          <img
-            src="./images/illustration-thank-you.svg"
-            alt="Ilustration thank you"
-          />
+      <section class="thanks-card">
+        <div class="thanks-card__container">
+          <div class="thanks-card__image-container">
+            <img
+              class="thanks-card__image"
+              src="./images/illustration-thank-you.svg"
+              alt="Ilustration thank you"
+            />
+          </div>
+          <!-- Add rating here -->
+          <div class="thanks-card__rating">
+            You selected <span class="thanks-card__mark">#</span> out of 5
+          </div>
+          <h2 class="thanks-card__title">Thank you!</h2>
+          <p class="thanks-card__text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
         </div>
-
-        <!-- Add rating here -->
-        <div class="thanks-card__rating">
-          You selected <span class="thanks-card__mark">#</span> out of 5
-        </div>
-
-        <h2 class="thanks-card__title">Thank you!</h2>
-        <p class="thanks-card__text">
-          We appreciate you taking the time to give a rating. If you ever need
-          more support, don’t hesitate to get in touch!
-        </p>
       </section>
     </main>
     <!-- Thank you state end -->

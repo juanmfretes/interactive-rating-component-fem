@@ -1,0 +1,49 @@
+/* thanks-card */
+.thanks-card {
+  background-color: indigo;
+  min-height: calc(100vh - 12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* thanks-card__container */
+.thanks-card__container {
+  background-color: rgb(62, 65, 62);
+  max-width: 412px;
+  height: 415px;
+  padding: 45px 32px;
+  text-align: center;
+
+  margin-top: 16px;
+}
+
+/* thanks-card__image-container */
+.thanks-card__image-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* thanks-card__image */
+.thanks-card__image {
+  width: 164px;
+
+  margin-left: -7px;
+}
+
+/* thanks-card__rating */
+.thanks-card__rating {
+}
+
+/* thanks-card__mark */
+.thanks-card__mark {
+}
+
+/* thanks-card__title */
+.thanks-card__title {
+}
+
+/* thanks-card__text */
+.thanks-card__text {
+}
