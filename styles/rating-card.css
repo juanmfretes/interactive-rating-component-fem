@@ -46,6 +46,7 @@
 /* rating-card__submit */
 .rating-card__submit {
   display: block;
+  width: 98.3%;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.9375rem;
