@@ -14,6 +14,7 @@
   height: 415px;
   padding: 45px 32px;
   text-align: center;
+  border-radius: 30px 28px 30px 28px;
 
   margin-top: 16px;
 }
@@ -23,6 +24,8 @@
   display: flex;
   justify-content: center;
   text-align: center;
+
+  padding-bottom: 1.9rem;
 }
 
 /* thanks-card__image */
@@ -34,6 +37,16 @@
 
 /* thanks-card__rating */
 .thanks-card__rating {
+  background-color: crimson;
+  color: rgb(62, 65, 62);
+  font-size: 0.9375rem;
+  max-width: 12rem;
+  padding: 0.55rem 0 0.29rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10rem;
+
+  margin-bottom: 2.2rem;
 }
 
 /* thanks-card__mark */
@@ -42,8 +55,15 @@
 
 /* thanks-card__title */
 .thanks-card__title {
+  font-size: 1.75rem;
+
+  padding-bottom: 0.6rem;
 }
 
 /* thanks-card__text */
 .thanks-card__text {
+  font-size: 15.5px;
+  letter-spacing: -0.18px;
+  padding-right: 6px;
+  line-height: 150%;
 }
