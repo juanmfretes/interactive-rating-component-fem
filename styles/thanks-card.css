@@ -1,6 +1,6 @@
 /* thanks-card */
 .thanks-card {
-  background-color: indigo;
+  background-color: var(--very-dark-blue);
   min-height: calc(100vh - 12px);
   display: flex;
   align-items: center;
@@ -9,7 +9,13 @@
 
 /* thanks-card__container */
 .thanks-card__container {
-  background-color: rgb(62, 65, 62);
+  background-color: var(--card-background);
+  background-image: radial-gradient(
+    circle at top,
+    var(--dark-blue) 15%,
+    var(--card-background) 70%,
+    var(--card-background) 70%
+  );
   max-width: 25.75rem;
   height: 25.9375rem;
   padding: 2.8125rem 2rem;
@@ -37,14 +43,15 @@
 
 /* thanks-card__rating */
 .thanks-card__rating {
-  background-color: crimson;
-  color: rgb(62, 65, 62);
+  background-color: var(--dark-blue);
+  color: var(--orange);
   font-size: 0.9375rem;
   max-width: 12rem;
   padding: 0.55rem 0 0.29rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10rem;
+  opacity: 70%;
 
   margin-bottom: 2.2rem;
 }
@@ -56,6 +63,8 @@
 /* thanks-card__title */
 .thanks-card__title {
   font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--white);
 
   padding-bottom: 0.6rem;
 }
