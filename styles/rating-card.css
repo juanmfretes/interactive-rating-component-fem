@@ -1,6 +1,6 @@
 /* rating-card */
 .rating-card {
-  background-color: crimson;
+  background-color: var(--very-dark-blue);
   min-height: calc(100vh - 12px);
   display: flex;
   align-items: center;
@@ -9,7 +9,13 @@
 
 /* rating-card__container */
 .rating-card__container {
-  background-color: indigo;
+  background-color: var(--card-background);
+  background-image: radial-gradient(
+    circle at top,
+    var(--dark-blue) 2%,
+    var(--card-background) 70%,
+    var(--card-background) 70%
+  );
   max-width: 25.875rem;
   height: 26rem;
   margin-top: 1.0625rem;
@@ -24,21 +30,23 @@
 
 /* rating-card__icon-image */
 .rating-card__icon-image {
-  width: 1.25rem;
-  height: 1.176rem;
-  max-width: 40%;
+  width: 1rem;
+  height: 1rem;
+  /* max-width: 40%; */
 }
 
 /* rating-card__title */
 .rating-card__title {
   font-size: 1.75rem;
   padding-bottom: 0.67rem;
+  color: var(--white);
 }
 
 /* rating-card__text */
 .rating-card__text {
   font-size: 0.9375rem;
   line-height: 1.6;
+  color: var(--light-grey);
 
   margin-bottom: 1.6rem;
 }

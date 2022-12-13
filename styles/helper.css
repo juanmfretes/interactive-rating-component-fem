@@ -6,7 +6,8 @@
   width: 3.125rem;
   height: 3.125rem;
   border-radius: 50%;
-  background-color: steelblue;
+  background-color: var(--dark-blue);
+  opacity: 90%;
 
   position: relative;
 }
