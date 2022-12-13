@@ -10,12 +10,6 @@
 /* rating-card__container */
 .rating-card__container {
   background-color: var(--card-background);
-  background-image: radial-gradient(
-    circle at top,
-    var(--dark-blue) 2%,
-    var(--card-background) 70%,
-    var(--card-background) 70%
-  );
   max-width: 25.875rem;
   height: 26rem;
   margin-top: 1.0625rem;

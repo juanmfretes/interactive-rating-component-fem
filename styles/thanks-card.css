@@ -10,12 +10,6 @@
 /* thanks-card__container */
 .thanks-card__container {
   background-color: var(--card-background);
-  background-image: radial-gradient(
-    circle at top,
-    var(--dark-blue) 15%,
-    var(--card-background) 70%,
-    var(--card-background) 70%
-  );
   max-width: 25.75rem;
   height: 25.9375rem;
   padding: 2.8125rem 2rem;
