@@ -11,12 +11,12 @@
 .thanks-card__container {
   background-color: var(--card-background);
   max-width: 25.75rem;
-  height: 25.9375rem;
-  padding: 2.8125rem 2rem;
+  /* height: 25.9375rem; */
+  padding: 2.8125rem 2rem 3rem;
   text-align: center;
   border-radius: 1.875rem 1.75rem 1.875rem 1.75rem;
 
-  margin-top: 1rem;
+  margin-top: 1.15rem;
 }
 
 /* thanks-card__image-container */
