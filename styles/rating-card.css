@@ -59,3 +59,10 @@
   border-radius: 20rem;
   padding: 0.95rem 0 0.73rem;
 }
+
+/* Media queries */
+@media (max-width: 390px) {
+  .rating-card__container {
+    max-width: 90%;
+  }
+}

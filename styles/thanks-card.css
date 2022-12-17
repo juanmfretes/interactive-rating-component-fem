@@ -70,3 +70,10 @@
   padding-right: 0.375rem;
   line-height: 150%;
 }
+
+/* Media queries */
+@media (max-width: 390px) {
+  .thanks-card__container {
+    max-width: 90%;
+  }
+}
