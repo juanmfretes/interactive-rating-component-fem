@@ -10,6 +10,15 @@
   opacity: 90%;
 
   position: relative;
+  transition: all 0.25s;
+}
+
+.icon-round-background__hover {
+  background-color: var(--medium-grey);
+}
+
+.rating-box__hover {
+  color: var(--white) !important;
 }
 
 .center-icon {

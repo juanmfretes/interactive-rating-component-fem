@@ -9,6 +9,10 @@
   gap: 1.4rem;
 }
 
+.rating-box__container:hover .rating-box__rate {
+  /* color: var(--dark-blue); */
+}
+
 /* rating-box__rate */
 .rating-box__rate {
   border: none;
