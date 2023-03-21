@@ -13,11 +13,21 @@
   transition: all 0.25s;
 }
 
+/* change color while hover effect */
 .icon-round-background__hover {
   background-color: var(--medium-grey);
 }
 
 .rating-box__hover {
+  color: var(--white) !important;
+}
+
+/* change color while clicking effect */
+.icon-round-background__clicked {
+  background-color: var(--orange) !important;
+}
+
+.rating-box__clicked {
   color: var(--white) !important;
 }
 
