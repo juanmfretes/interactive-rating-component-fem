@@ -73,3 +73,8 @@ submitBtn.addEventListener("mouseout", function () {
 });
 
 // Listener for big button (submit) click event
+submitBtn.addEventListener("click", function () {
+  // AGREGAR CONDICIONAL: sólo si uno de los 'rating items' está seleccionado
+  submitBtn.classList.toggle("rating-card__submit--orange-text");
+  submitBtn.classList.toggle("rating-card__submit--white-bg");
+});
