@@ -6,6 +6,8 @@ const ratingBtnsContainer = document.querySelector(".rating-box__container");
 const ratingBtnsBackground = Array.from(
   ratingBtnsContainer.querySelectorAll(".icon-round-background")
 );
+const submitBtn = document.querySelector(".rating-card__submit");
+
 console.log(ratingBtns);
 console.log(typeof ratingBtnsBackground);
 
@@ -38,7 +40,7 @@ ratingBtnsContainer.addEventListener("mouseout", function (event) {
   console.log(currentBtn);
 });
 
-// Click en un rating-box item (active: cambia de color a orange, luego queda en color gris)
+// Listener for 'rating-items' click event
 ratingBtnsContainer.addEventListener("click", function (event) {
   const currentBtn = event.target.closest(".icon-round-background");
 
@@ -60,4 +62,14 @@ ratingBtnsContainer.addEventListener("click", function (event) {
   numberBtn.classList.toggle("rating-box__clicked");
 });
 
-// Click en submit (active: invertir colores texto y botón)
+// Listener for big button (submit) hover event [mouseover]
+submitBtn.addEventListener("mouseover", function () {
+  submitBtn.classList.add("rating-card__submit--dark-text");
+});
+
+// Listener for big button (submit) hover event [mouseout]
+submitBtn.addEventListener("mouseout", function () {
+  submitBtn.classList.remove("rating-card__submit--dark-text");
+});
+
+// Listener for big button (submit) click event
