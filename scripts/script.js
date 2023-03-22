@@ -43,22 +43,22 @@ ratingBtnsContainer.addEventListener("mouseout", function (event) {
 // Listener for 'rating-items' click event
 ratingBtnsContainer.addEventListener("click", function (event) {
   const currentBtn = event.target.closest(".icon-round-background");
+  const numberBtn = currentBtn.firstElementChild; // get the current number el.
 
-  // remove helper classes from all 'rating-items' different than <<currentBtn>>
+  // remove helper classes from all 'rating-items' different than <<currentBtn/numberBtn>>
   // OBS: this allow to 'click' in a 'clicked rating item' and remove the helper classes
   ratingBtnsBackground.forEach((bg) => {
     if (bg != currentBtn) bg.classList.remove("icon-round-background__clicked");
   });
 
-  ratingBtns.forEach((bg) => {
-    if (bg != currentBtn) bg.classList.remove("rating-box__clicked");
+  ratingBtns.forEach((num) => {
+    if (num != numberBtn) num.classList.remove("rating-box__clicked");
   });
 
   // add helper class to change background color
   currentBtn.classList.toggle("icon-round-background__clicked");
 
   // change 'rating item' number color
-  const numberBtn = currentBtn.firstElementChild;
   numberBtn.classList.toggle("rating-box__clicked");
 });
 
