@@ -48,7 +48,7 @@
   background-color: var(--orange) !important;
 }
 
-.rating-box__clicked {
+.rating-box--white-text-selected {
   color: var(--white) !important;
 }
 

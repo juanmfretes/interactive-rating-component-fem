@@ -53,14 +53,15 @@ ratingBtnsContainer.addEventListener("click", function (event) {
   });
 
   ratingBtns.forEach((num) => {
-    if (num != numberBtn) num.classList.remove("rating-box__clicked");
+    if (num != numberBtn)
+      num.classList.remove("rating-box--white-text-selected");
   });
 
   // add helper class to change background color
   currentBtn.classList.toggle("icon-round-background--orange-bg");
 
   // change 'rating item' number color
-  numberBtn.classList.toggle("rating-box__clicked");
+  numberBtn.classList.toggle("rating-box--white-text-selected");
 });
 
 // Listener for big button (submit) hover event [mouseover]
