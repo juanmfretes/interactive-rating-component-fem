@@ -18,11 +18,11 @@ ratingBtnsContainer.addEventListener("mouseover", function (event) {
   if (!currentBtn) return;
 
   // add helper class to change background color
-  currentBtn.classList.add("icon-round-background__hover");
+  currentBtn.classList.add("icon-round-background--medium-grey-bg");
 
   // change number color
   const numberBtn = currentBtn.firstElementChild;
-  numberBtn.classList.add("rating-box__hover");
+  numberBtn.classList.add("rating-box--white-text");
 });
 
 // Listener for change color while hover (mouseout)
@@ -31,11 +31,11 @@ ratingBtnsContainer.addEventListener("mouseout", function (event) {
   if (!currentBtn) return;
 
   // add helper class to restore background color
-  currentBtn.classList.remove("icon-round-background__hover");
+  currentBtn.classList.remove("icon-round-background--medium-grey-bg");
 
   // restore number color
   const numberBtn = currentBtn.firstElementChild;
-  numberBtn.classList.remove("rating-box__hover");
+  numberBtn.classList.remove("rating-box--white-text");
 
   console.log(currentBtn);
 });
@@ -48,7 +48,8 @@ ratingBtnsContainer.addEventListener("click", function (event) {
   // remove helper classes from all 'rating-items' different than <<currentBtn/numberBtn>>
   // OBS: this allow to 'click' in a 'clicked rating item' and remove the helper classes
   ratingBtnsBackground.forEach((bg) => {
-    if (bg != currentBtn) bg.classList.remove("icon-round-background__clicked");
+    if (bg != currentBtn)
+      bg.classList.remove("icon-round-background--orange-bg");
   });
 
   ratingBtns.forEach((num) => {
@@ -56,7 +57,7 @@ ratingBtnsContainer.addEventListener("click", function (event) {
   });
 
   // add helper class to change background color
-  currentBtn.classList.toggle("icon-round-background__clicked");
+  currentBtn.classList.toggle("icon-round-background--orange-bg");
 
   // change 'rating item' number color
   numberBtn.classList.toggle("rating-box__clicked");

@@ -14,11 +14,11 @@
 }
 
 /* change color while hover effect */
-.icon-round-background__hover {
+.icon-round-background--medium-grey-bg {
   background-color: var(--medium-grey);
 }
 
-.rating-box__hover {
+.rating-box--white-text {
   color: var(--white) !important;
 }
 
@@ -44,7 +44,7 @@
 }
 
 /* change color while clicking effect */
-.icon-round-background__clicked {
+.icon-round-background--orange-bg {
   background-color: var(--orange) !important;
 }
 
