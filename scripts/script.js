@@ -58,6 +58,9 @@ ratingBtnsContainer.addEventListener("click", function (event) {
       num.classList.remove("rating-box--white-text-selected");
   });
 
+  // add helper class to submitBtn
+  submitBtn.classList.add("btn--disabled");
+
   // add helper class to change background color
   currentBtn.classList.toggle("icon-round-background--orange-bg");
 
@@ -65,7 +68,13 @@ ratingBtnsContainer.addEventListener("click", function (event) {
   numberBtn.classList.toggle("rating-box--white-text-selected");
 
   // Activate/deactivate submit btn
-  submitBtn.classList.toggle("btn--disabled");
+  if (
+    ratingBtnsBackground.some((btn) =>
+      btn.classList.contains("icon-round-background--orange-bg")
+    )
+  ) {
+    submitBtn.classList.remove("btn--disabled");
+  }
 });
 
 // Listener for big button (submit) hover event [mouseover]
