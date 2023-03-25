@@ -1,21 +1,15 @@
 "use strict";
 
-let finalRating;
 const ratingBtns = Array.from(document.querySelectorAll(".rating-box__rate"));
 const ratingBtnsContainer = document.querySelector(".rating-box__container");
 const ratingBtnsBackground = Array.from(
   ratingBtnsContainer.querySelectorAll(".icon-round-background")
 );
 const submitBtn = document.querySelector(".rating-card__submit");
-let rated = false;
-
-console.log(ratingBtns);
-console.log(typeof ratingBtnsBackground);
 
 // Listener for change color while hover (mouseover)
 ratingBtnsContainer.addEventListener("mouseover", function (event) {
   const currentBtn = event.target.closest(".icon-round-background");
-  console.log(currentBtn);
   if (!currentBtn) return;
 
   // add helper class to change background color
@@ -37,8 +31,6 @@ ratingBtnsContainer.addEventListener("mouseout", function (event) {
   // restore number color
   const numberBtn = currentBtn.firstElementChild;
   numberBtn.classList.remove("rating-box--white-text");
-
-  console.log(currentBtn);
 });
 
 // Listener for 'rating-items' click event
@@ -89,7 +81,7 @@ submitBtn.addEventListener("mouseout", function () {
 
 // Listener for big button (submit) click event
 submitBtn.addEventListener("click", function () {
-  // AGREGAR CONDICIONAL: sólo si uno de los 'rating items' está seleccionado
+  // Invert btn colors
   submitBtn.classList.toggle("rating-card__submit--orange-text");
   submitBtn.classList.toggle("rating-card__submit--white-bg");
 });
