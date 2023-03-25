@@ -67,3 +67,8 @@
     var(--card-background) 70%
   );
 }
+
+.btn--disabled {
+  pointer-events: none;
+  cursor: default;
+}

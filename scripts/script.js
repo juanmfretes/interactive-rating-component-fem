@@ -7,6 +7,7 @@ const ratingBtnsBackground = Array.from(
   ratingBtnsContainer.querySelectorAll(".icon-round-background")
 );
 const submitBtn = document.querySelector(".rating-card__submit");
+let rated = false;
 
 console.log(ratingBtns);
 console.log(typeof ratingBtnsBackground);
@@ -62,6 +63,9 @@ ratingBtnsContainer.addEventListener("click", function (event) {
 
   // change 'rating item' number color
   numberBtn.classList.toggle("rating-box--white-text-selected");
+
+  // Activate/deactivate submit btn
+  submitBtn.classList.toggle("btn--disabled");
 });
 
 // Listener for big button (submit) hover event [mouseover]
