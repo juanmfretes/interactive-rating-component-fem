@@ -1,0 +1,24 @@
+/* footer */
+.footer {
+  background-color: var(--very-dark-blue);
+  color: var(--light-grey);
+}
+
+/* footer__attribution */
+.footer__attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+/* footer__links */
+.footer__links:link,
+.footer__links:visited {
+  color: var(--orange);
+  text-decoration: none;
+
+  transition: all 0.25s;
+}
+
+.footer__links:hover {
+  box-shadow: 0 2px 0 0 var(--orange);
+}
