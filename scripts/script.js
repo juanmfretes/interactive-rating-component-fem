@@ -1,10 +1,12 @@
 "use strict";
 
-const ratingBtns = Array.from(document.querySelectorAll(".rating-box__rate"));
+const ratingCard = document.querySelector(".rating-card");
+const thanksCard = document.querySelector(".thanks-card");
 const ratingBtnsContainer = document.querySelector(".rating-box__container");
 const ratingBtnsBackground = Array.from(
   ratingBtnsContainer.querySelectorAll(".icon-round-background")
 );
+const ratingBtns = Array.from(document.querySelectorAll(".rating-box__rate"));
 const submitBtn = document.querySelector(".rating-card__submit");
 
 // Listener for change color while hover (mouseover)
@@ -36,7 +38,7 @@ ratingBtnsContainer.addEventListener("mouseout", function (event) {
 // Listener for 'rating-items' click event
 ratingBtnsContainer.addEventListener("click", function (event) {
   const currentBtn = event.target.closest(".icon-round-background");
-  const numberBtn = currentBtn.firstElementChild; // get the current number el.
+  const numberBtn = currentBtn.firstElementChild; // get the current 'number' (element).
 
   // remove helper classes from all 'rating-items' different than <<currentBtn/numberBtn>>
   // OBS: this allow to 'click' in a 'clicked rating item' and remove the helper classes
@@ -84,4 +86,18 @@ submitBtn.addEventListener("click", function () {
   // Invert btn colors
   submitBtn.classList.toggle("rating-card__submit--orange-text");
   submitBtn.classList.toggle("rating-card__submit--white-bg");
+
+  // Change visibility (.rating-card and .thanks-card)
+  setTimeout(function () {
+    ratingCard.classList.toggle("hidden");
+    thanksCard.classList.toggle("hidden");
+  }, 220);
 });
+
+/*
+SIGUIENTES PASOS:
+1. Cambiar visibilidad entre "rating-card" y "thanks-card"  [hidden helper class]
+2. Crear variable "global" para guardar el "textContent" del "numberBtn" [DOM] seleccionado y poder mostrarlo en 'thanks card'
+3. Estilizar el <footer>
+4. Añadir responsive design (media queries)
+*/
