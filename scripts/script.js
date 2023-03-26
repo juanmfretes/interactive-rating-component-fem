@@ -41,6 +41,10 @@ ratingBtnsContainer.addEventListener("mouseout", function (event) {
 // Listener for 'rating-items' click event
 ratingBtnsContainer.addEventListener("click", function (event) {
   const currentBtn = event.target.closest(".icon-round-background");
+
+  // Guard clause
+  if (!currentBtn) return;
+
   const numberBtn = currentBtn.firstElementChild; // get the current 'number' (element).
 
   // remove helper classes from all 'rating-items' different than <<currentBtn/numberBtn>>
