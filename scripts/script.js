@@ -8,6 +8,9 @@ const ratingBtnsBackground = Array.from(
 );
 const ratingBtns = Array.from(document.querySelectorAll(".rating-box__rate"));
 const submitBtn = document.querySelector(".rating-card__submit");
+const thanksCardRate = document.querySelector(".thanks-card__mark");
+
+let currentRate = -1;
 
 // Listener for change color while hover (mouseover)
 ratingBtnsContainer.addEventListener("mouseover", function (event) {
@@ -61,13 +64,15 @@ ratingBtnsContainer.addEventListener("click", function (event) {
   // change 'rating item' number color
   numberBtn.classList.toggle("rating-box--white-text-selected");
 
-  // Activate/deactivate submit btn
+  // Activate/deactivate submit btn and save current 'rate'
   if (
     ratingBtnsBackground.some((btn) =>
       btn.classList.contains("icon-round-background--orange-bg")
     )
   ) {
     submitBtn.classList.remove("btn--disabled");
+
+    currentRate = numberBtn.textContent;
   }
 });
 
@@ -83,6 +88,9 @@ submitBtn.addEventListener("mouseout", function () {
 
 // Listener for big button (submit) click event
 submitBtn.addEventListener("click", function () {
+  // Change '#' for the current selected rate
+  thanksCardRate.textContent = currentRate;
+
   // Invert btn colors
   submitBtn.classList.toggle("rating-card__submit--orange-text");
   submitBtn.classList.toggle("rating-card__submit--white-bg");
