@@ -1,7 +1,7 @@
 /* thanks-card */
 .thanks-card {
   background-color: var(--very-dark-blue);
-  min-height: calc(100vh - 12px);
+  min-height: calc(100vh - 14px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@
   text-align: center;
   border-radius: 1.875rem 1.75rem 1.875rem 1.75rem;
 
-  margin-top: 1.15rem;
+  margin-top: 1.25rem;
 }
 
 /* thanks-card__image-container */

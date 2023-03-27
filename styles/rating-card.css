@@ -1,7 +1,8 @@
 /* rating-card */
 .rating-card {
   background-color: var(--very-dark-blue);
-  min-height: calc(100vh - 12px);
+  background-color: var(--white);
+  min-height: calc(100vh - 14px);
   display: flex;
   align-items: center;
   justify-content: center;
