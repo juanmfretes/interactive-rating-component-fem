@@ -6,7 +6,8 @@
 
 .icon-round-background {
   width: 3.125rem;
-  height: 3.125rem;
+  /* height: 3.125rem; */
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   background-color: var(--dark-blue);
   opacity: 90%;
