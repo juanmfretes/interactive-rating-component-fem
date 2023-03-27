@@ -13,12 +13,12 @@
 /* footer__links */
 .footer__links:link,
 .footer__links:visited {
-  color: var(--orange);
+  color: var(--white);
   text-decoration: none;
 
   transition: all 0.25s;
 }
 
 .footer__links:hover {
-  box-shadow: 0 2px 0 0 var(--orange);
+  color: var(--orange);
 }
