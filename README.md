@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [URL to proyect's live site](https://juanmfretes.github.io/interactive-rating-component-fem/)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-rating-component-using-bem-methodology-and-javascript-Eh8Upym36d](https://www.frontendmentor.io/solutions/interactive-rating-component-using-bem-methodology-and-javascript-Eh8Upym36d)
+- Live Site URL: [https://juanmfretes.github.io/interactive-rating-component-fem/](https://juanmfretes.github.io/interactive-rating-component-fem/)
 
 ## My process
 
