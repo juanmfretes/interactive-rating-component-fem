@@ -11,7 +11,6 @@
 .rating-card__container {
   background-color: var(--card-background);
   max-width: 25.875rem;
-  /* height: 26rem; */
   margin-top: 1.25rem;
   padding: 2rem 2.0625rem;
   border-radius: 1.8rem;
@@ -26,7 +25,6 @@
 .rating-card__icon-image {
   width: 1rem;
   height: 1rem;
-  /* max-width: 40%; */
 }
 
 /* rating-card__title */

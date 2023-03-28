@@ -105,11 +105,3 @@ submitBtn.addEventListener("click", function () {
     thanksCard.classList.toggle("hidden");
   }, 220);
 });
-
-/*
-SIGUIENTES PASOS:
-1. Cambiar visibilidad entre "rating-card" y "thanks-card"  [hidden helper class]
-2. Crear variable "global" para guardar el "textContent" del "numberBtn" [DOM] seleccionado y poder mostrarlo en 'thanks card'
-3. Estilizar el <footer>
-4. Añadir responsive design (media queries)
-*/

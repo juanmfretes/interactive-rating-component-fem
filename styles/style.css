@@ -25,11 +25,3 @@ body {
     font-size: 88%;
   }
 }
-
-/* 
-implementar responsive (mobile version) 
-breakpoint 1: 600px = 37.5rem
-breakpoint 2: 390px
-
-OBS: ver cómo hacer que el alto sea igual al ancho (para los circulos de los números en rating-card)
-*/
